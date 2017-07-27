@@ -4,28 +4,42 @@
     <title>
       Calculator
     </title>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
 
   	<div id="wrapper">
-  		<header></header>
 
-  		<label for="firstNum">Enter First Number</label>
-  		<input type="number" name="firstNum" id="firstNum">
+  		<div class="flexcontainer">
 
-  		<label for="secondNum">Enter Second Number</label>
-  		<input type="number" name="secondNum" id="secondNum">
+  			<header><h3>ELECTRONIC CALCULATOR</h3></header>
 
-  		<button id="addButton">Add</button>
+  			<div id="inputOutput">
+		  		<label for="firstNum">ENTER FIRST NUMBER</label>
+		  		<input type="number" name="firstNum" id="firstNum" class="inputBox" maxlength="100">
 
-  		<button id="subtractButton">Subtract</button>
+		  		<label for="secondNum">ENTER SECOND NUMBER</label>
+		  		<input type="number" name="secondNum" id="secondNum" class="inputBox" maxlength="100">
 
-  		<button id="multiplyButton">Multipy</button>
+				<label for="printSpace">OUTPUT:</label>
+		  		<div id="printSpace"></div>
+	  		</div>
 
-  		<button id="divideButton">Divide</button>
+	  		<div id="operationButtons">
+		  		<button id="addButton">+</button>
 
-  		<p id="printSpace"></p>
+		  		<button id="subtractButton">-</button>
+
+		  		<button id="multiplyButton">x</button>
+
+		  		<button id="divideButton">/</button>
+	  		</div>
+
+	  		<div id="clearButton">
+	  			<button id="clearButton">Clear</button>
+	  		</div>
+
+	  	</div>
 
   		<footer></footer>
   	</div>

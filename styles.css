@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+#wrapper {
+	font-family: Verdana, serif;
+}
+
+
+/*"Coda Caption"*/
+
+.flexcontainer {
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #282823;
+	color: #dbae27;
+	border: 10px solid black;
+	border-radius: 10px;
+	width: 300px;
+	height: 460px;
+}
+
+h3 {
+	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+	margin: 0 auto 5px auto;
+	padding-top: 20px;
+	border: 1px solid #dbae27;
+	border-radius: 3px;
+	height: 46px;
+}
+
+#inputOutput {
+	width: 298px;
+	border: 1px solid #dbae27;
+	border-radius: 3px;
+	padding: 10px 0 10px 0;
+}
+
+label {
+	margin-left: 15px;	
+}
+
+.inputBox {
+	width: 266px;
+	/*height: 36px;*/
+	margin-left: 15px;
+	background-color: black;
+	color: red;
+	border: 1px solid darkgrey;
+	font-family: "Press Start 2P", sans-serif;
+	font-size: 2em;
+}
+
+#printSpace {
+	width: 266px;
+	height: 36px;
+	margin-left: 15px;
+	padding: 0;
+	border: 1px solid darkgrey;
+	background-color: black;
+	color: red;
+	font-family: "Press Start 2P", sans-serif;
+	font-size: 2em;
+}
+
+#operationButtons {
+/*	display: flex;
+	flex-wrap: wrap;*/
+}
+
+#operationButtons button {
+	width: 100px;
+	height: 30px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	align: center;
+}
+
+#clearButton {
+/*	display: flex
+	align-items: center;*/
+}
+
+#clearButton button {
+	width: 100px;
+	height: 30px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	align: center;
+}
+
