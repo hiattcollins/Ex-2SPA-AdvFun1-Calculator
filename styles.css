@@ -43,13 +43,14 @@ label {
 
 .inputBox {
 	width: 266px;
-	/*height: 36px;*/
+	height: 34px;
 	margin-left: 15px;
 	background-color: black;
 	color: red;
 	border: 1px solid darkgrey;
+	border-radius: 3px;
 	font-family: "Press Start 2P", sans-serif;
-	font-size: 2em;
+	font-size: 1.3em;
 }
 
 #printSpace {
@@ -58,35 +59,32 @@ label {
 	margin-left: 15px;
 	padding: 0;
 	border: 1px solid darkgrey;
+	border-radius: 3px;
 	background-color: black;
 	color: red;
 	font-family: "Press Start 2P", sans-serif;
-	font-size: 2em;
+	font-size: 1.3em;
 }
 
-#operationButtons {
-/*	display: flex;
-	flex-wrap: wrap;*/
+#textSpace{
+	margin: 8px 0 0 2px;
 }
 
-#operationButtons button {
-	width: 100px;
-	height: 30px;
-	border: 1px solid lightgrey;
+#keypad {
+	border: 1px solid #dbae27;
+	border-radius: 3px;
+	padding: 12px 10px 8px 15px;
+	margin-top: 5px;
+}
+
+#keypad button {
+	width: 120px;
+	height: 50px;
+	color: #dbae27;
+	background-color: #16150f;
+	border: 1px solid darkgrey;
 	border-radius: 5px;
-	align: center;
+	margin: 0 5px 5px 5px;
 }
 
-#clearButton {
-/*	display: flex
-	align-items: center;*/
-}
-
-#clearButton button {
-	width: 100px;
-	height: 30px;
-	border: 1px solid lightgrey;
-	border-radius: 5px;
-	align: center;
-}
 

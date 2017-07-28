@@ -3,7 +3,7 @@ console.log("calculator.js")
 // ********** PRINT TO DOM FUNCTION ********** //
 
 function printToDom(toPrint) {
-  document.getElementById("printSpace").innerHTML = `${toPrint}`;
+  document.getElementById("textSpace").innerHTML = `${toPrint}`;
 }
 
 // ********** GET FIRST NUMBER FUNCTION ********** //
