@@ -1,53 +1,89 @@
 console.log("calculator.js")
 
-/*
-  Create a function that multiplies two numbers
-  passed in as arguments. Return the product.
- */
+// ********** PRINT TO DOM FUNCTION ********** //
 
-function multiplier(num1, num2) {
-  return num1 * num2;
+function printToDom(toPrint) {
+  document.getElementById("textSpace").innerHTML = `${toPrint}`;
 }
 
-/*
-  Create a function that adds two numbers
-  passed in as arguments. Return the sum.
- */
+// ********** GET FIRST NUMBER FUNCTION ********** //
+
+function getFirstNum() {
+  let firstNum = Number(document.getElementById("firstNum").value);
+  return firstNum;
+}
+
+// ********** GET SECOND NUMBER FUNCTION ********** //
+
+function getSecondNum() {
+  let secondNum = Number(document.getElementById("secondNum").value);
+  return secondNum;
+} 
+
+// ********** ADDITION FUNCTION ********** //
 
 function adder(num1, num2) {
   return num1 + num2;
 }
 
-/*
-  Create a function that subtracts two numbers
-  passed in as arguments. Return the difference.
- */
+// ********** SUBTRACTION FUNCTION ********** //
 
 function subtractor(num1, num2) {
   return num1 - num2;
 }
 
+// ********** MULTIPLICATION FUNCTION ********** //
 
-/*
-  Create a function that divides two numbers
-  passed in as arguments. Return the quotient.
- */
-
-function divider(num1, num2) {
-  return num1 / num2;
+function multiplier(num1, num2) {
+  return num1 * num2;
 }
 
+// ********** DIVISION FUNCTION ********** //
 
-/*
-  Create a function that accepts three arguments.
-    1. First number
-    2. Second number
-    3. A function that performs an operation on them
+function divider(num1, num2) {
+  return (num1 / num2).toFixed(5);
+}
 
-  Return the value of the operation.
- */
+// ********** MULTI-CALCULATION FUNCTION ********** //
 
-var firstNum = 6;
-var secondNum = 8;
+function multiCalc(num1, num2, aFunction) {
 
-console.log(adder(firstNum, secondNum));
+  let theResult = aFunction(num1, num2);
+  // console.log("theResult", theResult);
+  return theResult;
+
+}
+
+// ********** ADDITION CLICK ACTION ********** //
+
+document.getElementById("addButton").addEventListener("click", function() {
+  printToDom(multiCalc(getFirstNum(), getSecondNum(), adder)); 
+});
+
+// ********** SUBTRACTION CLICK ACTION ********** //
+
+document.getElementById("subtractButton").addEventListener("click", function() {
+  printToDom(multiCalc(getFirstNum(), getSecondNum(), subtractor)); 
+});
+
+// ********** MULTIPLICATION CLICK ACTION ********** //
+
+document.getElementById("multiplyButton").addEventListener("click", function() {
+  printToDom(multiCalc(getFirstNum(), getSecondNum(), multiplier));
+});
+
+// ********** DIVISION CLICK ACTION ********** //
+
+document.getElementById("divideButton").addEventListener("click", function() {
+  printToDom(multiCalc(getFirstNum(), getSecondNum(), divider));
+});
+
+// ********** CLEAR BUTTON ********** //
+
+document.getElementById("clearButton").addEventListener("click", function() {
+
+  document.getElementById("firstNum").value = "";
+  document.getElementById("secondNum").value = "";
+  printToDom("");
+
+});

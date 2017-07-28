@@ -4,9 +4,49 @@
     <title>
       Calculator
     </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
 
+  	<div id="wrapper">
+
+  		<div class="flexcontainer">
+
+  			<header><h3>ELECTRONIC CALCULATOR</h3></header>
+
+  			<div id="inputOutput">
+		  		<label for="firstNum">ENTER FIRST NUMBER</label>
+		  		<input type="number" name="firstNum" id="firstNum" class="inputBox" maxlength="100">
+
+		  		<label for="secondNum">ENTER SECOND NUMBER</label>
+		  		<input type="number" name="secondNum" id="secondNum" class="inputBox" maxlength="100">
+
+				<label for="printSpace">OUTPUT:</label>
+		  		<div id="printSpace"><p id="textSpace"></p></div>
+	  		</div>
+
+	  		<div id="keypad">
+
+		  		<div id="operationButtons">
+			  		<button id="addButton">+</button>
+
+			  		<button id="subtractButton">-</button>
+
+			  		<button id="multiplyButton">x</button>
+
+			  		<button id="divideButton">/</button>
+		  		</div>
+
+		  		<div id="clearButton">
+		  			<button id="clearButton">Clear</button>
+		  		</div>
+
+	  		</div>
+
+	  	</div>
+
+  		<footer></footer>
+  	</div>
 
     <script type="text/javascript" src="calculator.js"></script>
   </body>
